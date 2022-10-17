@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -30,6 +31,17 @@ public class menu extends AppCompatActivity {
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id==R.id.op1){
+                    Toast.makeText(getApplicationContext(), "Ver registros de caja", Toast.LENGTH_SHORT).show();
+                }
+                else if (id==R.id.op2){
+                    Toast.makeText(getApplicationContext(), "Cambiar contraseña usuario", Toast.LENGTH_SHORT).show();
+                }
+                else if (id==R.id.op3){
+                    Toast.makeText(getApplicationContext(), "Cambiar contraseña caja", Toast.LENGTH_SHORT).show();
+                }
+
                 return false;
             }
         });
