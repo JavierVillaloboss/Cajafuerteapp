@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Caja Fuerte</string>
+    <string name="sesion">Iniciar Sesión</string>
+    <string name="Email">E-mail</string>
+    <string name="pass">Contraseña</string>
+    <string name="cpass">Confirmar Contraseña</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="sesionmenu">Iniciar Sesión</string>
+    <string name="registrar">Registrar</string>
+    <string name="User">Ususario</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ntcuenta">¿No tienes una Cuenta?</string>
+    <string name="registrate">Registrate</string>
+    <string name="m1">Registros</string>
+    <string name="m2">Cambiar contraseña usuario</string>
+    <string name="m3">Cambiar contraseña Caja</string>
+    <string name="registros">Registros</string>
+    <string name="Ccaja">Cambio de contraseña de Caja Fuerte</string>
+    <string name="Cuser">Cambio de contraseña de usuario</string>
+    <string name="abrir_drawer">Drawer Abierto</string>
+    <string name="cerrar_drawer">Drawer Cerrado</string>
+    <string name="passAc">Ingrese Contraseña actual</string>
+    <string name="passN">Contraseña Nueva</string>
+    <string name="passNC">Confirme Contraseña Nueva</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
