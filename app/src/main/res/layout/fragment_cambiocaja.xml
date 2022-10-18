@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cambiocaja">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="465dp"
+            android:layout_height="811dp"
+            android:src="@drawable/_0da20290ab6baa9b1c010ec35565f12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="492dp"
+            android:layout_height="752dp"
+            android:src="@drawable/fondo_amarillo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="85dp"
+            android:text="@string/Ccaja"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword6"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="574dp"
+            android:ems="10"
+            android:hint="@string/passAc"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword7"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:hint="@string/passN"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword6" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword8"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:hint="@string/passNC"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword7" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:text="@string/aceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

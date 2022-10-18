@@ -34,12 +34,18 @@ public class menu extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id==R.id.op1){
                     Toast.makeText(getApplicationContext(), "Ver registros de caja", Toast.LENGTH_SHORT).show();
+                    registros r = new registros();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,r).commit();
                 }
                 else if (id==R.id.op2){
                     Toast.makeText(getApplicationContext(), "Cambiar contraseña usuario", Toast.LENGTH_SHORT).show();
+                    Cambiouser c= new Cambiouser();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,c).commit();
                 }
                 else if (id==R.id.op3){
                     Toast.makeText(getApplicationContext(), "Cambiar contraseña caja", Toast.LENGTH_SHORT).show();
+                    Cambiocaja cc= new Cambiocaja();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,cc).commit();
                 }
 
                 return false;
