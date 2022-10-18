@@ -34,7 +34,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="85dp"
+            android:layout_marginBottom="98dp"
             android:text="@string/Ccaja"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword6"
@@ -43,27 +43,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPassword6"
+            android:id="@+id/editTextTextPassword7"
             android:layout_width="250dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="574dp"
+            android:layout_marginBottom="415dp"
             android:ems="10"
-            android:hint="@string/passAc"
+            android:hint="@string/passN"
             android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword7"
-            android:layout_width="250dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="116dp"
-            android:ems="10"
-            android:hint="@string/passN"
-            android:inputType="textPassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword6"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword6" />
 
         <EditText
@@ -86,6 +75,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword8" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword6"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="104dp"
+            android:ems="10"
+            android:hint="@string/passAc"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
