@@ -26,7 +26,9 @@ public class menu extends AppCompatActivity {
 
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
-        setwindowActionBar(tb);
+
+
+
 
         NavigationView nav = (NavigationView) findViewById(R.id.nav);
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -78,6 +80,7 @@ public class menu extends AppCompatActivity {
         });
     }
 
-    private void setwindowActionBar(Toolbar tb) {
-    }
+
+
+
 }
