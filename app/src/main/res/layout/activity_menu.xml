@@ -5,6 +5,7 @@
     android:id="@+id/Principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_0da20290ab6baa9b1c010ec35565f12"
     tools:context=".menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,6 +28,53 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/include">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="265dp"
+                    android:layout_height="253dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/_649089" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/datesing"
+                    android:shadowColor="#000000"
+                    android:text="Contraseña de caja"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword" />
+
+                <EditText
+                    android:id="@+id/editTextNumberPassword"
+                    android:layout_width="283dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/datesing"
+                    android:ems="10"
+                    android:hint="@string/digitos"
+                    android:inputType="numberPassword"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gris"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -37,6 +85,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header"
-        app:menu="@menu/menu1" />
+        app:menu="@menu/menu1" >
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

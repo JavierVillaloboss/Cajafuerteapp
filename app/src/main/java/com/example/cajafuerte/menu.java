@@ -56,11 +56,6 @@ public class menu extends AppCompatActivity {
                     Cambiocaja cc= new Cambiocaja();
                     getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,cc).commit();
                 }
-                else if (id==R.id.op4){
-                    Toast.makeText(getApplicationContext(), "Abrir Caja Fuerte", Toast.LENGTH_SHORT).show();
-                    menuprincipal mp= new menuprincipal();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,mp).commit();
-                }
 
                 return false;
             }

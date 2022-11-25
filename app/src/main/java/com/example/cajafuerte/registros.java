@@ -37,17 +37,11 @@ public class registros extends Fragment {
     ArrayList<AC> acList;
 
 
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -57,8 +51,6 @@ public class registros extends Fragment {
         database = FirebaseDatabase.getInstance();
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(this.getContext()));
-
-
 
 
         database.getReference("Registros").addValueEventListener(new ValueEventListener() {

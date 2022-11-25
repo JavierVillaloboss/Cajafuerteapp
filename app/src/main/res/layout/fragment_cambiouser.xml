@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/_0da20290ab6baa9b1c010ec35565f12"
     tools:context=".Cambiouser">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_amarillo">
 
         <TextView
             android:id="@+id/textView7"
@@ -18,6 +20,7 @@
             android:layout_marginBottom="91dp"
             android:text="@string/Cuser"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +33,8 @@
             android:ems="10"
             android:hint="@string/passN"
             android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
 
@@ -41,6 +46,8 @@
             android:ems="10"
             android:hint="@string/passNC"
             android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPassword4"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4" />
 
@@ -52,6 +59,8 @@
             android:ems="10"
             android:hint="@string/passAc"
             android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gris"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="128dp"
             android:text="@string/aceptar"
+            android:textColorLink="@color/yellow_300"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword5" />
