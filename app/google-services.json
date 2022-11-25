@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "251314005506",
-    "firebase_url": "https://cajafuertefr-default-rtdb.firebaseio.com",
-    "project_id": "cajafuertefr",
-    "storage_bucket": "cajafuertefr.appspot.com"
+    "project_number": "400602810739",
+    "firebase_url": "https://appmovil-193b3-default-rtdb.firebaseio.com",
+    "project_id": "appmovil-193b3",
+    "storage_bucket": "appmovil-193b3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:251314005506:android:24f2fec81c6373b9ea691b",
+        "mobilesdk_app_id": "1:400602810739:android:0f30d5b23629ffc9299d06",
         "android_client_info": {
           "package_name": "com.example.cajafuerte"
         }
       },
       "oauth_client": [
         {
-          "client_id": "251314005506-trrqk55nicmahdk8fhg5v136gfrgp2ip.apps.googleusercontent.com",
+          "client_id": "400602810739-b3hnl0aj35gj6v7m2m199ccvdiqvrkv0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDv9E0kCTk5KDmDv7vxBxsi4QMRTfaUv7o"
+          "current_key": "AIzaSyAX0Hh780l2Px2YopXOvOPjWrAMgCdGFUw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "251314005506-trrqk55nicmahdk8fhg5v136gfrgp2ip.apps.googleusercontent.com",
+              "client_id": "400602810739-b3hnl0aj35gj6v7m2m199ccvdiqvrkv0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -14,6 +14,7 @@
     <string name="m1">Registros</string>
     <string name="m2">Cambiar contraseña usuario</string>
     <string name="m3">Cambiar contraseña Caja</string>
+    <string name="m4">Abrir Caja Fuerte</string>
     <string name="registros">Registros</string>
     <string name="Ccaja">Cambio de contraseña de Caja</string>
     <string name="Cuser">Cambio de contraseña de usuario</string>

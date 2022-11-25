@@ -7,16 +7,6 @@
     tools:context=".login">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="465dp"
-        android:layout_height="811dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_0da20290ab6baa9b1c010ec35565f12" />
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="265dp"
         android:layout_height="0dp"
@@ -27,17 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_649089" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/captura_de_pantalla_2022_10_16_021646" />
 
     <TextView
         android:id="@+id/textView3"
@@ -55,14 +34,13 @@
         android:id="@+id/Correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
         android:layout_marginBottom="109dp"
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/Contrasenia"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="100dp" />
 
     <EditText
         android:id="@+id/Contrasenia"
@@ -72,12 +50,12 @@
         android:ems="10"
         android:hint="@string/pass"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/Iniciarsesionbtn"
         app:layout_constraintStart_toStartOf="@+id/Correo"
         app:layout_constraintTop_toBottomOf="@+id/Correo" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Iniciarsesionbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"

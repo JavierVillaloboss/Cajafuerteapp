@@ -7,35 +7,15 @@
     tools:context=".RegistrarCuenta">
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="465dp"
-        android:layout_height="811dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_0da20290ab6baa9b1c010ec35565f12" />
-
-    <ImageView
         android:id="@+id/imageView7"
         android:layout_width="265dp"
         android:layout_height="0dp"
         android:layout_marginBottom="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/usuarioR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_649089" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/captura_de_pantalla_2022_10_16_021646" />
 
     <TextView
         android:id="@+id/textView4"
@@ -45,62 +25,59 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+        tools:layout_editor_absoluteY="258dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/usuarioR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginBottom="49dp"
         android:ems="10"
+        android:hint="@string/User"
         android:inputType="textPersonName"
-        android:text="@string/User"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/correo"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
         android:layout_marginBottom="51dp"
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintBottom_toTopOf="@+id/contrasenia"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioR"
+        tools:layout_editor_absoluteX="100dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contrasenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
         android:layout_marginBottom="44dp"
         android:ems="10"
         android:hint="@string/pass"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintBottom_toTopOf="@+id/Ccontrasenia"
+        app:layout_constraintTop_toBottomOf="@+id/correo"
+        tools:layout_editor_absoluteX="100dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/Ccontrasenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
         android:layout_marginBottom="23dp"
         android:ems="10"
         android:hint="@string/cpass"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintBottom_toTopOf="@+id/registrarbtn"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenia"
+        tools:layout_editor_absoluteX="100dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/registrarbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="49dp"
@@ -109,5 +86,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/Ccontrasenia" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.cajafuerte;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +9,9 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
@@ -15,6 +19,13 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
 
 public class menu extends AppCompatActivity {
 
@@ -22,13 +33,8 @@ public class menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
-
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
-
-
-
 
         NavigationView nav = (NavigationView) findViewById(R.id.nav);
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -49,6 +55,11 @@ public class menu extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Cambiar contraseña caja", Toast.LENGTH_SHORT).show();
                     Cambiocaja cc= new Cambiocaja();
                     getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,cc).commit();
+                }
+                else if (id==R.id.op4){
+                    Toast.makeText(getApplicationContext(), "Abrir Caja Fuerte", Toast.LENGTH_SHORT).show();
+                    menuprincipal mp= new menuprincipal();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,mp).commit();
                 }
 
                 return false;
