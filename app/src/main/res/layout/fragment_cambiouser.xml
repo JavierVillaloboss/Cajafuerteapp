@@ -21,12 +21,12 @@
             android:text="@string/Cuser"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+            app:layout_constraintBottom_toTopOf="@+id/contraseniaAc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPassword4"
+            android:id="@+id/cambioCU"
             android:layout_width="253dp"
             android:layout_height="43dp"
             android:layout_marginTop="116dp"
@@ -35,11 +35,11 @@
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textColorHint="@color/gris"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+            app:layout_constraintStart_toStartOf="@+id/contraseniaAc"
+            app:layout_constraintTop_toBottomOf="@+id/contraseniaAc" />
 
         <EditText
-            android:id="@+id/editTextTextPassword5"
+            android:id="@+id/cambioCUN"
             android:layout_width="253dp"
             android:layout_height="40dp"
             android:layout_marginTop="116dp"
@@ -48,11 +48,11 @@
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textColorHint="@color/gris"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword4" />
+            app:layout_constraintStart_toStartOf="@+id/cambioCU"
+            app:layout_constraintTop_toBottomOf="@+id/cambioCU" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/contraseniaAc"
             android:layout_width="250dp"
             android:layout_height="0dp"
             android:layout_marginBottom="567dp"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/cambioCUbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="128dp"
@@ -75,6 +75,6 @@
             android:textColorLink="@color/yellow_300"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword5" />
+            app:layout_constraintTop_toBottomOf="@+id/cambioCUN" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
