@@ -62,8 +62,9 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/contrasenia"
-        app:layout_constraintTop_toBottomOf="@+id/usuarioR"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="@+id/usuarioR"
+        app:layout_constraintStart_toStartOf="@+id/usuarioR"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioR" />
 
     <EditText
         android:id="@+id/contrasenia"
@@ -75,8 +76,9 @@
         android:inputType="textPassword"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/Ccontrasenia"
-        app:layout_constraintTop_toBottomOf="@+id/correo"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="@+id/correo"
+        app:layout_constraintStart_toStartOf="@+id/correo"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <EditText
         android:id="@+id/Ccontrasenia"
@@ -88,8 +90,9 @@
         android:inputType="textPassword"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/registrarbtn"
-        app:layout_constraintTop_toBottomOf="@+id/contrasenia"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="@+id/contrasenia"
+        app:layout_constraintStart_toStartOf="@+id/contrasenia"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenia" />
 
     <Button
         android:id="@+id/registrarbtn"

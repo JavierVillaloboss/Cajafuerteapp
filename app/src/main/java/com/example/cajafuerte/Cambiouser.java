@@ -39,14 +39,14 @@ public class Cambiouser extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_cambiouser, container, false);
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com");
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com/");
 
-
+        final Button btn = v.findViewById(R.id.cambiobtn);
         final EditText contrasenia = v.findViewById(R.id.contraseniaAc);
         final EditText cambiocu = v.findViewById(R.id.cambioCU);
         final EditText cambiocun = v.findViewById(R.id.cambioCUN);
 
-        final Button btn = v.findViewById(R.id.cambioCUbtn);
+
 
 
         btn.setOnClickListener(new View.OnClickListener() {

@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class RegistrarCuenta extends AppCompatActivity {
 
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com/");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
