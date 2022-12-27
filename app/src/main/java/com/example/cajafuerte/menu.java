@@ -5,13 +5,19 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.bluetooth.BluetoothAdapter;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
@@ -26,8 +32,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class menu extends AppCompatActivity {
+    EditText passcf;
+    Button btnA;
+    Button abrir;
+    DatabaseReference databaseReference;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +48,40 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
+
+        passcf = findViewById(R.id.cajapass);
+        btnA = findViewById(R.id.btnAbrir);
+
+        boolean abierto = false, cerrado = false;
+
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("passCF");
+
+        Switch servor=(Switch)findViewById(R.id.abrir);
+         database = FirebaseDatabase.getInstance();
+         myRef = database.getReference("servor");
+        myRef.setValue("hola");
+
+        servor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    myRef.setValue(1);
+                }else{
+                    myRef.setValue(0);
+                }
+            }
+        });
+
+
+        btnA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                passcajafuerte();
+            }
+
+
+        });
+
 
         NavigationView nav = (NavigationView) findViewById(R.id.nav);
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -60,6 +107,9 @@ public class menu extends AppCompatActivity {
                 return false;
             }
         });
+
+
+
         DrawerLayout dl = (DrawerLayout) findViewById(R.id.Principal);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -88,5 +138,12 @@ public class menu extends AppCompatActivity {
 
 
 
+    private void passcajafuerte() {
+        String passCf = passcf.getText().toString();
 
+        pass pas = new pass(passCf);
+
+        databaseReference.push().setValue(pas);
+        Toast.makeText(this, "Contraseña ingresada", Toast.LENGTH_SHORT).show();
+    }
 }

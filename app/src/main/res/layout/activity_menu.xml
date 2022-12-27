@@ -35,10 +35,11 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="265dp"
-                    android:layout_height="253dp"
+                    android:layout_height="0dp"
                     app:layout_constraintBottom_toTopOf="@+id/textView9"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/_649089" />
 
                 <TextView
@@ -53,13 +54,13 @@
                     android:textAllCaps="true"
                     android:textColor="#000000"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
-                    app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
+                    app:layout_constraintBottom_toTopOf="@+id/cajapass"
+                    app:layout_constraintEnd_toEndOf="@+id/cajapass"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword" />
+                    app:layout_constraintStart_toStartOf="@+id/cajapass" />
 
                 <EditText
-                    android:id="@+id/editTextNumberPassword"
+                    android:id="@+id/cajapass"
                     android:layout_width="283dp"
                     android:layout_height="55dp"
                     android:background="@drawable/datesing"
@@ -74,6 +75,27 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnAbrir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="Guardar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cajapass" />
+
+                <Switch
+                    android:id="@+id/abrir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:text="Abrir"
+                    android:textColor="#FBFBFB"
+                    android:textSize="30sp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAbrir"
+                    tools:layout_editor_absoluteX="137dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
 

@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "400602810739",
-    "firebase_url": "https://appmovil-193b3-default-rtdb.firebaseio.com",
-    "project_id": "appmovil-193b3",
-    "storage_bucket": "appmovil-193b3.appspot.com"
+    "project_number": "660788913208",
+    "project_id": "arduinocf-bc0a4",
+    "storage_bucket": "arduinocf-bc0a4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:400602810739:android:0f30d5b23629ffc9299d06",
+        "mobilesdk_app_id": "1:660788913208:android:fcfeb06aa16199804732cd",
         "android_client_info": {
           "package_name": "com.example.cajafuerte"
         }
       },
       "oauth_client": [
         {
-          "client_id": "400602810739-b3hnl0aj35gj6v7m2m199ccvdiqvrkv0.apps.googleusercontent.com",
+          "client_id": "660788913208-1p9dh2hdrt6m1g3nvnuckd2t2tfjej28.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAX0Hh780l2Px2YopXOvOPjWrAMgCdGFUw"
+          "current_key": "AIzaSyCYxCYJ9LgxY7UrqTzmWpfhlhJ9kf42pXk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "400602810739-b3hnl0aj35gj6v7m2m199ccvdiqvrkv0.apps.googleusercontent.com",
+              "client_id": "660788913208-1p9dh2hdrt6m1g3nvnuckd2t2tfjej28.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

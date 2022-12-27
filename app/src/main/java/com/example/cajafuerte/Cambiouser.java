@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Cambiouser extends Fragment {
 
 
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cajafuertefr-default-rtdb.firebaseio.com/");
 
 
     @Override
